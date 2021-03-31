@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Yelp for Anything!</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body><br/>
+			
+		<center>
+			<h1>Cipher-Test</h1>
+			<br/><br/>
+			<form action="{{ url_for('index') }}" method="POST">
+				<button type="submit">Encrypt</button>
+				<input type="text" placeholder="text" name="text">
+				<input type="number" id="cipher_type" name="cipher_type" min="1" max="26">
+			</form>
+			<br/><br/>
+			<textarea id="w3review" name="w3review" rows="4" cols="50">
+				{{return_text}}
+			</textarea>
+		</center>
+	</body>
+</html>
