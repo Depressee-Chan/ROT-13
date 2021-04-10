@@ -5,4 +5,4 @@ simple flask server caesar-cipher
 - Flask
 
 ## How to use
-run python file "app.py" with python 3 after using pip to install requirements in requirements.txt
+run python file "app.py" with ```python3 app.py``` after using pip to install requirements in requirements.txt
